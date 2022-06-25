@@ -1,0 +1,108 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Product Registration form</title>
+</head>
+
+
+<body>
+    <div class="container ">
+        <!-- section for form-image -->
+        <div class="row imgform">
+            <div class="img-container col-lg-5 px-0">
+                <img src="img/kettle2.jpg" class="image img-fluid" alt="">
+            </div>
+            <!-- section for form -->
+            <div class="col-lg-7  form-container">
+
+                <div class="custom-icon">
+                    <i class="fa fa-3x fa-times-circle-o " id="cross" aria-hidden="true"></i>
+                    <a href="/home" id="navigate" hidden ></a>
+                </div>
+                
+                <p>Register your product 
+                </p>
+                
+                <form action="" class="form-group" onsubmit="return validateform()">
+                    <!-- if return value of validateform is true form is submitted else not  -->
+
+
+                    <div class="row">
+                        <!-- to get input for category -->
+                        <div class="col-lg-6">
+                            <label for="categoryInput">Category <span id="cat"></span> </label>
+                            <div>
+                                <select class="form-control" id="categoryInput">
+                                    <option value="Select category" selected>Select category</option>
+                                    <option value="val1">1</option>
+                                    <option value="val2">2</option>
+                                    <option value="val3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- to get input for model -->
+                        <div class="col-lg-6">
+                            <label for="modelInput">Model <span id="mod"></span> </label>
+                            <select class="form-control" id="modelInput">
+                                <option value="Select model">Select model</option>
+                                <option value="val1">1</option>
+                                <option value="val2">2</option>
+                                <option value="val3">3</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+                        <!-- to get input for serial number -->
+                        <div class="col-lg-6">
+                            <label for="snoInput">Serial number <span id="sno"></span> </label>
+                            <input class="form-control" type="number" id="snoInput"  >
+                        </div>
+                        <!-- to get input for date of Invoice -->
+                        <div class="col-lg-6">
+                            <label for="dateInput">Date of Invoice <span id="doi"></span> </label>
+                            <input id="dateInput" class="form-control" type="date">
+                        </div>
+
+                    </div>
+
+                    <!-- drag and drop section for taking file input -->
+                    <div class="container-for-drag-area">
+                        <label for="fileInput" >Upload file <span id="fileinp"></span>  </label>
+                        <div class="drag-area" id="d-a" >
+                            <span class="header">Drag files or <span class="button" id="browse" >Browse</span></span>
+                            <input id="fileInput" type="file" hidden>
+                        </div>
+                    </div>
+
+                    <!-- button to submit form -->
+                    <div class="button-div">
+                        <input type="submit" class="subbutton">
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="script/script.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

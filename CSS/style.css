@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Balthazar&family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root
+{
+    --font1:'Poppins', sans-serif;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imgform
+{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 21px 3px rgba(0, 0, 0, 0.25);
+}
+
+.form-container
+{
+    height: 100%;
+    /* border: 2px solid black; */
+    padding: 5px 10px 5px 10px;
+}
+.custom-icon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    /* border: 2px solid black; */
+}
+.fa-times-circle-o
+{
+    -webkit-text-stroke: 2px white; /* background color */
+    color: gray;
+    cursor: pointer;
+}
+.form-container p
+{
+    font-family: var(--font1);
+    font-size:xx-large;
+    font-weight: 400;
+    color: gray;
+    position: relative;
+}
+label
+{
+    font-family: var(--font1);
+    margin-top: 40px;
+    font-weight: 500;
+}
+.error
+{
+    color: #dc3545;
+}
+/* CSS for drag and drop */
+.container-for-drag-area
+{
+    width: 100%;
+}
+
+.drag-area
+{
+    height: 200px;
+    border: 1px dashed rgb(173, 169, 169);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active
+{
+    border: 3px solid grey;
+}
+
+#fileuploadtxt
+{
+    margin-bottom: 7px;
+}
+.header
+{
+    
+    font-family: var(--font1);
+    font-weight: 500;
+    color: gray;
+}
+
+.button
+{
+    font-weight: 600;
+    font-family: var(--font1);
+    color:  #dc3545;
+    cursor: pointer;
+}
+.drag-area img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .drag-area ends here */
+.subbutton
+{
+    width: 40%;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: var(--font1);
+    margin-top: 20px;
+    border-radius: 100px;
+    background-color:  #dc3545;
+    color: wheat;
+    border: none;
+}
+/* large devices */
+@media screen and (max-width: 1000px){
+
+    .custom-icon
+    {
+        top:50%;
+        padding: 10px;
+        /* border: 2px solid black; */
+    }
+    .fa-times-circle-o
+    {
+        -webkit-text-stroke: 0.1px; /* background color */
+        color: rgb(67, 66, 66);
+    }
+    .button-div
+    {
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+    }
+    .subbutton
+    {
+        width: 60%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+/*medium size devices*/
+@media screen and (max-width:760px){
+    .custom-icon
+    {
+        top:35%;
+        padding: 10px;
+        /* border: 2px solid black; */
+    }
+    .fa-times-circle-o
+    {
+        color: rgb(43, 43, 43);
+    }
+}
+/*small devices*/
+@media screen and (max-width:300px){
+    .custom-icon
+    {
+        top:28%;
+        padding: 10px;
+        /* border: 2px solid black; */
+    }
+}
